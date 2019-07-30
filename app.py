@@ -8,7 +8,7 @@ def home():
 
 @app.route("/student/<int:id>")
 def display_student(id):
-	return render_template("home.html" , i=id)
+	return render_template("student.html" , id_number=id)
 
 if __name__ == '__main__':
     app.run(debug=True)
